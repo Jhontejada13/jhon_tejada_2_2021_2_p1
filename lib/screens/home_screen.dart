@@ -81,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
       borderRadius: BorderRadius.circular(175),
       child: const FadeInImage(
         placeholder: AssetImage('assets/elefante.jpg'),
-        image: NetworkImage("https://lh3.googleusercontent.com/proxy/UUFkIe3eGL64fBSBjRNlcmszXaaFMWWhxrhGI4DygugxobDZXS76pjhNQdLsD6MDQ6VhE0U8LRBtPSdsESXL5Luo6V0ZoGpeu2WPKuYph5BYZUQ2uZl4LK1SR3E-"),
+        image: AssetImage('assets/elefante.jpg'),
         height: 350,
         fit: BoxFit.cover,
       ),
