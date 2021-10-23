@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:partial1_elephantapp/screens/elephants_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({ Key? key }) : super(key: key);
@@ -8,7 +9,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  bool _showLoader = false;
 
   @override
   Widget build(BuildContext context) {
@@ -64,16 +64,17 @@ class _HomeScreenState extends State<HomeScreen> {
             }
           ),
         ),
-        onPressed: () => _mostrarLista()
+        onPressed: () {
+          Navigator.push(
+            context, 
+            MaterialPageRoute(
+              builder: (context) => ElephantsScreen(),
+            )
+          );
+        }
       ),
     );
-  }
-
-  Widget _mostrarLista() {
-    return Container(
-      
-    );
-  }
+  }  
 
   Widget _showImage() {
     return ClipRRect(
