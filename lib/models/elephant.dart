@@ -45,18 +45,18 @@ class Elephant {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = Map<String, dynamic>();
-    data['_id'] = sId;
-    data['index'] = index;
-    data['name'] = name;
-    data['affiliation'] = affiliation;
-    data['species'] = species;
-    data['sex'] = sex;
-    data['fictional'] = fictional;
-    data['dob'] = dob;
-    data['dod'] = dod;
-    data['wikilink'] = wikilink;
-    data['image'] = image;
-    data['note'] = note;
+    data['_id'] = this.sId;
+    data['index'] = this.index;
+    data['name'] = this.name;
+    data['affiliation'] = this.affiliation;
+    data['species'] = this.species;
+    data['sex'] = this.sex;
+    data['fictional'] = this.fictional;
+    data['dob'] = this.dob;
+    data['dod'] = this.dod;
+    data['wikilink'] = this.wikilink;
+    data['image'] = this.image;
+    data['note'] = this.note;
     return data;
   }
 }

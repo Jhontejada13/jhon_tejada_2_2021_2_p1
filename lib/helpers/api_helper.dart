@@ -11,8 +11,8 @@ class ApiHelper{
       var response = await http.get(
         url,
         headers: {
-          'content-type' : 'application/json',
-          'accept' : 'application/json',
+          'User-Agent' : 'Thunder Client (https://www.thunderclient.io)',
+          'accept' : '*/*',
         }
       );
 
@@ -26,7 +26,9 @@ class ApiHelper{
     var decodedJson = jsonDecode(body);
     if(decodedJson != null) {
       for (var item in decodedJson) {
-        list.add(Elephant.fromJson(item));
+        if(item.length == 12){
+          list.add(Elephant.fromJson(item));
+        }        
       }
     }
 
