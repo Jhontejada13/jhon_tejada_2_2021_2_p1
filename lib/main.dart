@@ -9,11 +9,23 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Material App Bar'),
+          backgroundColor: Colors.purple[300],
+          leading: Image.network("https://www.besoftsocks.com/wp-content/uploads/2018/07/Elefante.png",
+              color: Colors.white,
+          ),
+          title: Container(
+            alignment: Alignment.center,
+            child: Text("ElephantApp")
+          ),          
+          elevation: 20,
+          shadowColor: Colors.purple[100],        
         ),
         body: Center(
           child: Container(
-            child: Text('Hello World'),
+            child: TextButton(
+              child: Text("Ver elefantes"),
+              onPressed: () {},
+            ),
           ),
         ),
       ),
