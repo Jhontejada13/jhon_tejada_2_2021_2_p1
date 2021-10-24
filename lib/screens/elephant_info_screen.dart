@@ -64,9 +64,7 @@ class _ElephantInfoScreenState extends State<ElephantInfoScreen> {
         borderRadius: BorderRadius.circular(150),
         child: FadeInImage(
           placeholder: const AssetImage('assets/elefante.jpg'), 
-          image: widget.elephant.image.contains('missing.jpg') 
-            ? const NetworkImage("https://lh3.googleusercontent.com/proxy/UUFkIe3eGL64fBSBjRNlcmszXaaFMWWhxrhGI4DygugxobDZXS76pjhNQdLsD6MDQ6VhE0U8LRBtPSdsESXL5Luo6V0ZoGpeu2WPKuYph5BYZUQ2uZl4LK1SR3E-")
-            : NetworkImage(widget.elephant.image),
+          image: NetworkImage(widget.elephant.image),
           width: 300,
           height: 300,
           fit: BoxFit.cover
@@ -97,14 +95,16 @@ class _ElephantInfoScreenState extends State<ElephantInfoScreen> {
                                 children: <Widget> [
                                   const Text('Nombre: ',
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF9575CD)
                                     )
                                   ),
                                   Flexible(
                                     child: Text(
                                       widget.elephant.name,
                                       style: const TextStyle(
-                                        fontSize: 15
+                                        fontSize: 15,
+                                        color: Color(0xFF9575CD)
                                       ),
                                     ),
                                   ),
@@ -115,14 +115,16 @@ class _ElephantInfoScreenState extends State<ElephantInfoScreen> {
                                 children: <Widget> [
                                   const Text('Index: ',
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF9575CD)
                                     )
                                   ),
                                   Flexible(
                                     child: Text(
                                       widget.elephant.index.toString(),
                                       style: const TextStyle(
-                                        fontSize: 15
+                                        fontSize: 15,
+                                        color: Color(0xFF9575CD)
                                       ),
                                     ),
                                   ),
@@ -133,14 +135,16 @@ class _ElephantInfoScreenState extends State<ElephantInfoScreen> {
                                 children: <Widget> [
                                   const Text('Afiliación: ',
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF9575CD)
                                     )
                                   ),
                                   Flexible(
                                     child: Text(
                                       widget.elephant.affiliation,
                                       style: const TextStyle(
-                                        fontSize: 15
+                                        fontSize: 15,
+                                        color: Color(0xFF9575CD)
                                       ),
                                     ),
                                   ),
@@ -151,14 +155,16 @@ class _ElephantInfoScreenState extends State<ElephantInfoScreen> {
                                 children: <Widget> [
                                   const Text('Especie: ',
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF9575CD)
                                     )
                                   ),
                                   Flexible(
                                     child: Text(
                                       widget.elephant.species,
                                       style: const TextStyle(
-                                        fontSize: 15
+                                        fontSize: 15,
+                                        color: Color(0xFF9575CD)
                                       ),
                                     ),
                                   ),
@@ -169,13 +175,15 @@ class _ElephantInfoScreenState extends State<ElephantInfoScreen> {
                                 children: <Widget> [
                                   const Text('Sexo: ',
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF9575CD)
                                     )
                                   ),
                                   Text(
                                     widget.elephant.sex,
                                     style: const TextStyle(
-                                      fontSize: 15
+                                      fontSize: 15,
+                                      color: Color(0xFF9575CD)
                                     ),
                                   ),
                                 ],
@@ -185,14 +193,16 @@ class _ElephantInfoScreenState extends State<ElephantInfoScreen> {
                                 children: <Widget> [
                                   const Text('Link: ',
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF9575CD)
                                     )
                                   ),
                                   Expanded(
                                     child: Text(
                                       widget.elephant.wikilink,
                                       style: const TextStyle(
-                                        fontSize: 15
+                                        fontSize: 15,
+                                        color: Color(0xFF9575CD)
                                       ),
                                     ),
                                   ),

@@ -83,6 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
         placeholder: AssetImage('assets/elefante.jpg'),
         image: AssetImage('assets/elefante.jpg'),
         height: 350,
+        width: 350,
         fit: BoxFit.cover,
       ),
     );
